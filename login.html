@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+        <link href="css/fonts.css" rel="stylesheet">
+        <script src="js/global.js"></script>
+	    <link rel="stylesheet" href="css/global.css" />
+        <link href="libs/css/fontawesome/css/all.css" rel="stylesheet">
+        <script src="libs/js/jquery.min.js"></script>
+		<script src="libs/js/sweetalert.min.js"></script>
+
+        <script src="js/login.js"></script>
+        <link rel="stylesheet" href="css/login.css" />    
+    </head>
+    <body>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo Oasis">
+        </div>
+        <div class="input-container" id="inputContainer">
+            <div class="input-container-title">
+                <i class="fad fa-sign-in-alt"></i>
+                <span>Login</span>
+            </div>
+            <div class="input-container-row" style="flex-direction: column;">
+                <div class="input-container-input-row">
+                    <i class="far fa-user"></i>
+                    <input type="text" id="username" placeholder="Username" >
+                </div>
+                <div class="input-container-input-row">
+                    <i class="far fa-key"></i>
+                    <input type="password" id="password" placeholder="Password" >
+                </div>
+            </div>
+            <div class="input-container-row" style="flex-direction: column;">
+                <label class="pure-material-checkbox">
+                    <input type="checkbox" checked id="ricorda">
+                    <span>Ricorda</span>
+                </label>
+            </div>
+            <div class="input-container-row" style="flex-direction: column;">
+                <button id="login-button" onclick="login(this,false)">Conferma</button>
+            </div>
+            <div class="input-container-row" style="flex-direction: column;">
+                <div id="error-container"></div>
+            </div>
+        </div>
+    </body>
+</html>

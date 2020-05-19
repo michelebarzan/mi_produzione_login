@@ -1,0 +1,170 @@
+*
+{
+    text-rendering: optimizeLegibility;
+}
+#btnGoToTop
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ddd; /* Set a background color */
+    height:50px;
+    width:50px;
+    color:black;
+    font-size: 22px;
+    border-radius: 50%; /* Rounded corners */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.swal2-title
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size:18px;
+}
+.swal2-content
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size:13px;
+}
+.swal2-confirm,.swal2-cancel
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size:13px;
+}
+.bottom-control-bar
+{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:60px;
+    background-color: #f9f9f9;
+    box-shadow: 0 -5px 10px 0 rgba(0,0,0,.1)!important;
+    justify-content: space-evenly;
+}
+.bottom-control-bar-button
+{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border:none;
+    height:60px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    outline:none;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bottom-control-bar-button:active
+{
+    color: rgb(48, 133, 214);
+}
+.bottom-control-bar-button div
+{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.bottom-control-bar-button div i
+{
+    height:23px ;
+    font-size: 20px;
+    text-align: center;
+}
+.bottom-control-bar-button div span
+{
+    height:10px;
+    font-size: 10px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#alertOrientation
+{
+    display: none;
+    color:red;
+    font-size: 15px;
+    width:100%;
+    text-align: center;
+    margin-top: 20%;
+}
+.pupup-aggiungi-alla-home-outer-container
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin-top:5px;
+    margin-bottom:-20px;
+}
+.pupup-aggiungi-alla-home-outer-container ul
+{
+    padding-left:20px;
+    margin-top:5px;
+}
+.pupup-aggiungi-alla-home-outer-container ul li div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*margin-top:2px;
+    margin-bottom:2px;*/
+}
+.pupup-aggiungi-alla-home-outer-container ul li a
+{
+    color:#016bcd;
+}
+.system-toast-outer-container
+{
+    position: fixed;
+    height:50px;
+    width: auto;
+    max-width: 250px;
+    overflow: hidden;
+    background-color:#404040 ;
+    border-radius: 4px;
+    /*display: flex;*/
+    display: none;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.system-toast-outer-container i
+{
+    color:#EBEBEB;
+    margin-right: 10px;
+}
+.system-toast-outer-container span
+{
+    font-family: 'Quicksand',sans-serif;
+    color:#EBEBEB;
+    font-size: 12px;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*Rimuovere per abilitare landscape*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) 
+{
+    body 
+    {
+        display: none;
+    }
+    #alertOrientation
+    {
+        display: block;
+    }
+}
