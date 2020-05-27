@@ -20,7 +20,8 @@
         }
     }
 
-    $arraiResponse["serverName"]=$_SERVER["SERVER_ADDR"];
+    //$arraiResponse["serverName"]=$_SERVER["SERVER_ADDR"];
+    $arraiResponse["serverName"]=$_SERVER["SERVER_ADDR"].':8081';
     $arraiResponse["applicazioni"]=$applicazioni;
     echo json_encode($arraiResponse);
 

@@ -24,17 +24,17 @@
 }
 .swal2-title
 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size:18px;
 }
 .swal2-content
 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size:13px;
 }
 .swal2-confirm,.swal2-cancel
 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size:13px;
 }
 .bottom-control-bar
@@ -83,7 +83,7 @@
 {
     height:10px;
     font-size: 10px;
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-weight: bold;
     text-align: center;
 }
@@ -98,7 +98,7 @@
 }
 .pupup-aggiungi-alla-home-outer-container
 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     text-align: left;
     margin-top:5px;
@@ -148,7 +148,7 @@
 }
 .system-toast-outer-container span
 {
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     color:#EBEBEB;
     font-size: 12px;
     max-width: 220px;
